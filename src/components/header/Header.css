@@ -34,6 +34,7 @@ form.search {
     display: flex;
     flex:1;
     justify-content: space-between;
+    margin-right: 10px;
 }
 
 .search input {
@@ -253,11 +254,24 @@ a.sidebar-link-movil {
 
 .searchMovil .search {
     height: 50px;
-    width: 95%;
+    width: 100%;
 }
 
 .searchMovil input {
     height: 50px;
+}
+
+.searchMovil button {
+    height: 50px;
+}
+
+@media (max-width: 991px) {
+    form.search {
+        margin-right: 0;
+    }  
+    .logo{
+        max-width: 100%;
+    }  
 }
 
 @media (max-width: 375px) {
@@ -270,6 +284,16 @@ a.sidebar-link-movil {
         filter: brightness(0.9);
         width: 50px;
         margin-right: 10px;
+    }
+    
+}
+
+@media (max-width: 280px) {
+    a.sidebar-link-movil {
+        width: 30px;
+    }    
+    img.bars-movil {
+        width: 30px;
     }
     
 }
