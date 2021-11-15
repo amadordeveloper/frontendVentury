@@ -31,6 +31,9 @@ form.search {
     width: 80%;
     margin: auto;
     position:relative;
+    display: flex;
+    flex:1;
+    justify-content: space-between;
 }
 
 .search input {
@@ -76,6 +79,7 @@ form.search {
     outline: none;
     height: 38px;
     cursor:pointer;
+    margin-right: 10px;
 }
 
 .search button img {
@@ -91,6 +95,7 @@ form.search {
     left: 0;
     right: 0;
     cursor: default;
+    text-align: center;
 }
 
 .header__add button {
@@ -243,7 +248,7 @@ a.sidebar-link-movil {
 .searchMovil {
     background: white;
     z-index: 1;
-    padding: 20px 0;
+    padding: 20px 20px;
 }
 
 .searchMovil .search {
