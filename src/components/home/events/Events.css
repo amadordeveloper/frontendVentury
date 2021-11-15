@@ -1,0 +1,211 @@
+.events{
+    padding-top: 30px;
+}
+
+.cards-label-container{
+   display: flex;
+   justify-content: space-between;
+    align-items: center;
+   flex:1;
+}
+
+.events-label{
+    width: 250px;
+    color:#222237;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.separator-right{
+    width: 100%;
+    background: #e7e7e7;
+    height: 3px;
+}
+
+.cards-list{
+    list-style: none;
+    padding: 0;
+}
+
+
+.card-content {
+    border-radius: 10px;
+    padding: 20px;
+    background: white;
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
+    display:flex;
+    align-items: center;
+    box-shadow: 0px 0px 25px rgb(233 230 244 / 80%);
+}
+
+
+.card-image{
+    max-width: 100%;
+}
+
+.card-title {
+    color: #a3a3a3;
+    margin: 0;
+    font-size: 15px;
+}
+
+.card-description {
+    color: #241C54;
+    line-height: 1;
+
+}
+
+/* Slider */
+
+.carousel-item-content {
+    background-position: center;
+    height: 300px;
+    border-radius: 15px;
+    background-size: cover;
+}
+
+.text-slide-left {
+    display: flex;
+    color: white;
+    font-size: 2.1em;
+    height: 100%;
+    align-items: center;
+    padding-left: 120px;
+}
+
+.text-slide-right {
+    display: flex;
+    color: white;
+    font-size: 2.1em;
+    height: 100%;
+    align-items: center;
+    padding-right: 120px;
+    justify-content: flex-end;
+}
+
+.purple-badge {
+    position: absolute;
+    background: #4f63ff;
+    border-radius: 25px;
+    width: max-content;
+    color: white;
+    right: 10px;
+    top: 10px;
+    font-size: .8em;
+    padding: 2px 20px;
+}
+
+.carousel-item-content .row {
+    height: 100%;
+}
+
+
+a.carousel-control-next, a.carousel-control-prev {
+    height: 40px;
+    margin: auto;
+    background: white;
+    opacity: 1;
+    width: 60px;
+    border-radius: 10px;
+}
+
+a.carousel-control-next{
+    right: 10px;
+}
+
+a.carousel-control-prev{
+    left: 10px;
+}
+
+
+.carousel-control-next-icon{
+    background-image: url("../../../assets/images/arrow-right.png");
+    background-size: 50%;
+}
+
+.carousel-control-prev-icon{
+    background-image: url("../../../assets/images/arrow-left.png");
+    background-size: 50%;
+}
+
+.carousel-indicators button{
+    border-radius: 50%;
+    width: 10px !important;
+    height: 10px !important;
+}
+
+@media(max-width: 1070px){
+    .events-label{
+        width: 300px;
+    }
+}
+
+
+
+/* Ajustes Movil*/
+
+@media(max-width: 992px){
+    .text-slide-left{
+        height: auto;
+        padding-left: 20px;
+        margin-top: 40px;
+        font-size: 2.6em;
+        line-height: 1;
+        width: 300px;
+    }
+    .text-slide-right{
+        height: auto;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    .carousel-item-content .row{
+        height: auto;
+    }
+
+    a.carousel-control-next, a.carousel-control-prev {
+        bottom: 20%;
+        top: auto;
+    }
+}
+
+@media(max-width: 796px){
+    .events-label{
+        width: 350px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .events-label{
+        width: 200px;
+    }
+
+    .cards-container{
+        margin-top:20px
+    }
+
+    .card-item {
+        width: 48%;
+    }
+    
+    .cards-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    .card-image {
+        width: 60px;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 400px){
+    .events-label{
+        width: 300px;
+    }
+}

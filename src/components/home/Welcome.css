@@ -1,0 +1,158 @@
+.welcome{
+    padding-top: 20px;
+}
+
+.card-currently {
+    background: white;
+    box-shadow: 0px 0px 25px rgb(233 230 244 / 80%);
+    border-radius: 5px;
+    width: 180px;
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+    padding: 20px 20px;
+    max-width: 100%;
+}
+
+span.card-currently-text-top {
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    color: #A198B7;
+}
+
+.card-currently-container-bottom {
+    display: block;
+    text-align: center;
+}
+
+.icon-currently {
+    width: 25px;
+    height: 25px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-flex;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.card-currently-text-bottom {
+    display: inline-flex;
+    font-size: 1.6em;
+    height: 25px;
+    align-items: center;
+    vertical-align: middle;
+    color:#241C54;
+    font-weight: bold;
+}
+
+/* bottom row */
+.back-welcome{
+    background: url(../../assets/images/back-welcome.png) no-repeat center right;
+    background-size: cover;
+    height: 200px;
+    border-radius: 25px;
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.container-guy{
+    max-height: 100%;
+    position: relative;
+}
+
+.guy-welcome{
+    width: 300px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.container-text-welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-welcome {
+    color: white;
+    font-size: 2em;
+    display: block;
+}
+
+.subtext-welcome {
+    color: white;
+    font-size: 1.1em;
+}
+
+.subtext-welcome img {
+    width: 30px;
+    vertical-align: bottom;
+}
+
+/* Ajustes Móviles */
+.text-center-movil {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+
+    
+    .container-text-welcome {
+        align-items: center;
+    }
+    
+    .container-guy {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .guy-welcome {width: 280px;}
+
+    .text-welcome{
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 767px) {
+    .back-welcome {
+        padding-top:120px ;
+        height: 300px;
+        background: none;
+        background-color: #4F63FF;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .back-welcome{
+        padding-top: 80px;
+        height: 250px;
+    }
+    .guy-welcome {width: 200px;}
+
+    .text-welcome{
+        font-size: 1.5em;
+    }
+
+    .subtext-welcome{
+        font-size: 1em;
+    }
+
+    .card-currently {
+        padding: 10px;
+    }
+    
+    .card-currently-text-bottom {
+        font-size: 1em;
+    }
+    
+    span.card-currently-text-top {
+        font-size: .6em;
+    }
+
+}

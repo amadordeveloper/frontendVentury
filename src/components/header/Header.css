@@ -1,0 +1,270 @@
+.header{
+    display: flex;
+    box-shadow: 0px 2px 25px 0px  rgba(233, 230, 244, 0.8);
+    background-color: #fff;
+}
+
+.header__logo {
+    width: 25%;
+    text-align: left;
+    padding: 10px;
+}
+
+.header__search {
+    width: 45%;
+    padding: 15px;
+    display: inline-flex;
+}
+
+.header__userpanel {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    
+}
+
+/*Estilos personalizados de componente de búsqueda */
+form.search {
+    background: #F5F4FB;
+    height: 40px;
+    width: 80%;
+    margin: auto;
+    position:relative;
+}
+
+.search input {
+    width: 90%;
+    height: 38px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-weight: 300;
+    outline: none;
+    color: #274871;
+    padding: 0px 10px;
+}
+
+.search input::placeholder {
+    color: #9F96B6;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.search input::-moz-placeholder {
+    color: #9F96B6;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.search input:-ms-input-placeholder {
+    color: #9F96B6;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.search input:-moz-placeholder {
+    color: #9F96B6;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.search button {
+    background: none;
+    border: none;
+    color: #D1CCDE;
+    outline: none;
+    height: 38px;
+    cursor:pointer;
+}
+
+.search button img {
+    width: 18px;
+    vertical-align: middle;
+}
+
+.search small {
+    color: #666;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    cursor: default;
+}
+
+.header__add button {
+    background: #4F63FF;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    height: 40px;
+    width: 80px;
+    max-width: 95%;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.header__add button:hover {
+    background: #303b91;
+    color: white;
+}
+
+
+/* Estilos de panel usuario */
+
+
+.header__notifications {
+    padding: 15px 5px;
+    position: relative;
+}
+
+
+.header__notifications .btn-icon-bell {
+    border: none;
+    background: none;
+    width: 40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 40px;
+    cursor: pointer;
+}
+
+.header__notifications .btn-icon-chat {
+    border: none;
+    background: none;
+    width: 45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 45px;
+    cursor: pointer;
+    margin-top: -2px;
+}
+
+
+.header__notifications .btn-icon-bell img{
+    width: 22px;
+    margin:auto;
+}
+
+.header__notifications .btn-icon-chat img{
+    width: 26px;
+    margin:auto;
+}
+
+.notification-indicator {
+    background: #4F63FF;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 25px;
+    right: 6px;
+}
+
+.header__user{
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    color:#6f6f70;
+    font-weight: 400;
+}
+
+.avatar__user {
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 10px;
+    margin-top: -5px;
+    font-size: 0.8em;
+    position:relative;
+}
+
+.avatar__arrow .btn-icon-arrow {
+    border: none;
+    background: none;
+    width: 30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+
+}
+
+
+.avatar__arrow .btn-icon-arrow img{
+    width: 15px;
+    margin:auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.avatar__arrow .btn-icon-arrow:hover img{
+    filter: brightness(0.8);
+}
+
+/* Ajustes móvil */
+img.bars-movil {
+    filter: brightness(0.9);
+    width: 60px;
+}
+
+a.sidebar-link-movil {
+    width: 60px;
+    display: block;
+    padding: 20px;
+}
+
+.header-movil {
+    justify-content: space-between;
+    padding: 15px 20px 10px;
+    z-index: 2;
+    position: relative;
+}
+
+.header-movil .notification-indicator {
+    bottom: 0;
+    right: 0;
+}
+
+.searchMovil {
+    background: white;
+    z-index: 1;
+    padding: 20px 0;
+}
+
+.searchMovil .search {
+    height: 50px;
+    width: 95%;
+}
+
+.searchMovil input {
+    height: 50px;
+}
+
+@media (max-width: 375px) {
+    a.sidebar-link-movil {
+        width: 50px;
+        display: block;
+        padding: 20px;
+    }    
+    img.bars-movil {
+        filter: brightness(0.9);
+        width: 50px;
+        margin-right: 10px;
+    }
+    
+}

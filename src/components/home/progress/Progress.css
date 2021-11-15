@@ -1,0 +1,273 @@
+.progress-sec{    
+    padding-top: 30px;
+}
+
+.overview-box {
+    background: #2D007E;
+    padding: 20px 20px 80px 20px;
+    border-radius: 5px;
+}
+
+h2.overview-title {
+    color: white;
+    text-align: center;
+}
+
+.overview-chart {
+    width: 45%;
+    display: block;
+    margin: auto;
+}
+
+.single-chart {
+    width: 33%;
+    justify-content: space-around ;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #FF6840;
+  stroke-width: 3;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+  
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.green .circle {
+  stroke: #FFDB00;
+}
+
+.percentage {
+  fill: white;
+  font-size: 0.5em;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+.overview-data{
+    background:rgba(255,255,255,0.1);
+    border-radius:12px;
+    padding:20px 20px 5px 20px;
+    display:block;
+    width:90%;
+    margin:auto;
+    margin-top:15px;
+}
+
+.status-name {
+    color: white;
+    font-size: .9em;
+}
+
+.status-text {
+    color: white;
+    margin-left: 2px;
+}
+
+.status-number {
+    color: white;
+    font-size:2.8em;
+    font-weight: 600;
+}
+
+.overview-data-item {
+    display: inline-flex;
+    align-items: baseline;
+}
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right:5px
+}
+
+.bg-yellow {
+    background: #ffdb00;
+}
+
+.bg-orange {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ff6840;
+}
+
+/* lado derecho */
+
+.progress-title-spaced {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  align-items: center;
+  flex:1;
+}
+
+.progress-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 25px rgb(233 230 244 / 80%);
+  padding:20px;
+  border-radius: 5px;
+  margin-top: 15px;
+  background: white;
+  width: 32%;
+}
+
+
+.bar-title-progress {
+  background: #E8E6EE;
+  height: 3px; 
+  width: 80%;
+  margin-left:20px;
+}
+
+
+.progress-item.active{
+    background: #3564FF;
+    color: white; 
+    box-shadow: 5px 10px 25px rgb(53 100 255/ 80%);
+}
+
+.progress-item-title {
+  color: #9D94B4;
+  font-weight: bold;  
+}
+
+.progress-item.active .progress-item-title {
+  color: white;
+}
+
+.progress-item-number {
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+.mailconfirmation-alert{
+  background: url(../../../assets/images/back-alert.png) no-repeat left center;
+  background-size: cover;
+  border-radius: 5px;
+  margin-top: 40px;
+  width: 100%;
+  display: block;
+  padding: 20px 0px;
+}
+
+.mailconfirmation-alert div{
+  color:white;
+  font-size: 14px;
+  line-height: auto;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+.padding-left-progress{
+  padding-left: 40px;
+}
+
+.progress-item-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Ajustes moviles */ 
+
+@media (max-width: 1280px) {
+
+  .status-name{
+    font-size: .8em;
+  }
+  .status-number{
+    font-size: 2em;
+  }
+}
+
+
+
+@media (max-width: 1170px) {
+
+  .status-name{
+    font-size: .7em;
+  }
+  .status-number{
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 1120px) {
+
+  .overview-data{
+    width: 100%;
+  }
+}
+
+@media (max-width: 1040px) {
+
+  .overview-data{
+    padding: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .progress-item-title{
+    font-size: .9em;
+  }
+
+  .progress-item-number{
+    font-size: 2em;
+  }
+  
+}
+
+@media (max-width: 767px) {
+
+  .progress-container-movil .overview-box{
+    border-radius: 0;
+  }
+
+  .data-item-content{
+    display: block;
+  }
+
+  .overview-data-item{
+    display:flex;
+  }
+
+  .progress-item{
+    width: 49%;
+  }
+
+  .padding-left-progress{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  
+}
+
+
+  @media (max-width: 350px) {
+    .progress-item-title{
+      font-size: .7em;
+      line-height: 1;
+    }
+  
+    .progress-item-number{
+      font-size: 1.7em;
+    }
+    
+  }
+  

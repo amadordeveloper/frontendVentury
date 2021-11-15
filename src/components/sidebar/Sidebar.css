@@ -1,0 +1,31 @@
+.sidebar{
+    position: absolute;
+    background: #4F63FF;
+    color:white;
+    width:65px;
+    height:100%;
+    justify-content: center;
+}
+
+ul.sidebar-items {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar-item {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:all ease .3s;
+}
+
+.sidebar-item:hover, .sidebar-item.active {
+    background: #4200FF;
+}
+
+.sidebar-item img {
+    width: 20px;
+}

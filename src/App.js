@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+// styles 
 import './App.css';
 
+//Componentes 
+import Header from './components/header/Header';
+import Welcome from './components/home/Welcome';
+import Sidebar from './components/sidebar/Sidebar';
+
+// assets
+import avatar from "./assets/images/avatar.png";
+import Events from './components/home/events/Events';
+import Activity from './components/home/activity/Activity';
+import Progress from './components/home/progress/Progress';
+
 function App() {
+  const user = {
+    name: "Clarence",
+    lastName: "Russell",
+    avatar: avatar
+}
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header user={user}/>
+      <Sidebar />
+      <Welcome user={user}/>
+      <Events />
+      <Activity/>
+      <Progress/>
     </div>
   );
 }
